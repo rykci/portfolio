@@ -1,15 +1,21 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar({ openProjects, openContact }) {
   return (
     <nav className="px-10 flex justify-between">
-      <h1 className="text-xl">rickyyu.en</h1>
+      <a className="text-xl" href="">
+        rickyyu.en
+      </a>
       <ul className="flex gap-5">
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects" onClick={openProjects}>
+            Projects
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" onClick={openContact}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

@@ -6,11 +6,21 @@ function ProfileCard() {
   return (
     <Card className="">
       <div className="text-center">
-        <h2 className="text-5xl font-medium py-2">Ricky Yuen</h2>
+        <h2 className="text-5xl font-bold py-2">Ricky Yuen</h2>
         <h3 className="text-2xl py-2">Software Developer</h3>
         <div className="flex justify-center gap-x-12 py-2">
-          <SocialIcon url="https://www.linkedin.com/in/yuenricky/" />
-          <SocialIcon url="https://github.com/rykci" />
+          <SocialIcon
+            onClick={() =>
+              window.open('https://www.linkedin.com/in/yuenricky/', '_blank')
+            }
+            className="rounded-full cursor-pointer"
+            network="linkedin"
+          />
+          <SocialIcon
+            network="github"
+            className="rounded-full cursor-pointer"
+            onClick={() => window.open('https://github.com/rykci', '_blank')}
+          />
         </div>
       </div>
     </Card>
