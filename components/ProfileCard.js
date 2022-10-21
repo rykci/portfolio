@@ -7,8 +7,8 @@ function ProfileCard() {
   return (
     <Card className="">
       <div className="text-center">
-        <h2 className="text-5xl font-bold py-2">Ricky Yuen</h2>
-        <h3 className="text-2xl py-2">Software Developer</h3>
+        <h2 className="text-5xl font-bold p-2">Ricky Yuen</h2>
+        <h3 className="text-2xl pb-4">Software Developer</h3>
 
         <div className="">
           <Image
