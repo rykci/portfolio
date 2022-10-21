@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Card from './Card'
 import { SocialIcon } from 'react-social-icons'
 
@@ -8,7 +9,16 @@ function ProfileCard() {
       <div className="text-center">
         <h2 className="text-5xl font-bold py-2">Ricky Yuen</h2>
         <h3 className="text-2xl py-2">Software Developer</h3>
-        <div className="flex justify-center gap-x-12 py-2">
+
+        <div className="">
+          <Image
+            className="border-2 bg-white/30 rounded-full"
+            src="/memoji.png"
+            width={200}
+            height={200}
+          />
+        </div>
+        <div className="flex justify-center gap-x-8 py-2">
           <SocialIcon
             onClick={() =>
               window.open('https://www.linkedin.com/in/yuenricky/', '_blank')
