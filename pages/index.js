@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard'
 import ContactCard from '../components/ContactCard'
 
 const Home = () => {
-  const [showProjects, setShowProjects] = useState(false)
+  const [showProjects, setShowProjects] = useState(true)
   const [showContact, setShowContact] = useState(false)
 
   return (

@@ -19,7 +19,7 @@ function ProjectCard({ cardOpen, setCardOpen }) {
           )}
         </div>
         {cardOpen ? (
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 md:flex-row ">
             <Card styles="mt-2 mx-0 rounded-md bg-blue-500/30 pt-0 hover:bg-blue-500/60">
               <div
                 className="group cursor-pointer"
